@@ -88,7 +88,7 @@ def dockerCreds = new UsernamePasswordCredentialsImpl(
     "docker",
     "docker hub credentials for pipeline",
     "sree56",
-    "56Spirit@power92"
+    "REPLACE_WITH_REAL_PASSWORD"
 )
 credentials_store.addCredentials(Domain.global(), dockerCreds)
 
@@ -97,7 +97,7 @@ def githubToken = new StringCredentialsImpl(
     CredentialsScope.GLOBAL,
     "githubcred",
     "Github Personal Access Token",
-    Secret.fromString("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")
+    Secret.fromString("REPLACE_WITH_REAL_TOKEN")
 )
 credentials_store.addCredentials(Domain.global(), githubToken)
 
@@ -106,8 +106,8 @@ def awsCreds = new AWSCredentialsImpl(
     CredentialsScope.GLOBAL,
     "aws-key",
     "aws credentials for pipeline",
-    "AKIA6ODU626LHI445GIA",
-    "LhA0FD77kzadGiOwf4znJ7vkqRZExxBV4Z5catlT"
+    "REPLACE_WITH_REAL_ACCESS",
+    "REPLACE_WITH_REAL_SECRET_ACCESS"
 )
 credentials_store.addCredentials(Domain.global(), awsCreds)
 
