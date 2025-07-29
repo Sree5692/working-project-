@@ -150,7 +150,7 @@ dcDesc.save()
 def sonarConfig = Jenkins.instance.getDescriptorByType(hudson.plugins.sonar.SonarGlobalConfiguration.class)
 def sonarServer = new SonarInstallation(
     "sonar-server",
-    "http://44.213.89.155:9000/",
+    "http://dummy-sonar-server:9000/",
     "sonar-token", // references the credentials ID above
     "",
     "",
